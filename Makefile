@@ -9,18 +9,22 @@
 .PHONY : build
 build : 
 
-.PHONY : install
-install : 
+.PHONY : check_syntax
+check_syntax : 
+	ghdl -s module_name/module_name.vhdl
 
-.PHONY : compile
-compile : 
+.PHONY : analysis
+analysis : 
+	ghdl -a module_name/module_name.vhdl
 
-.PHONY : link
-link : 
+.PHONY : elaborate
+elaboration : 
+	ghdl -e module_name
 
-.PHONY : uninstall
-uninstall : 
+.PHONY : simulate
+simulate : 
+	ghdl -r module_name
 
 .PHONY : clean
 clean :
-
+	rm 

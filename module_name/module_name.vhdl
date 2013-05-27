@@ -28,13 +28,13 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-entity entity_name is
+entity module_name is
   port (
 		: in std_logic;
 		: out std_logic
 	);
-end entity_name;
+end module_name;
 
-architecture architecture_name of entity_name is
+architecture architecture_name of module_name is
 	--signal : std_logic;
 end architecture;
