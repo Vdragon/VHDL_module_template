@@ -24,17 +24,26 @@
 --本檔案的結構基於 VHDL 模組範本專案
 --The structure of this file is based on VHDL module template project
 --	https://github.com/Vdragon/VHDL_module_template
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.std_logic_unsigned.all;
+	--引入 IEEE 函式庫
+		library ieee;
+			--使用 IEEE 1164 標準邏輯閘 std_logic std_logic_vector(?)
+				use ieee.std_logic_1164.all;
+			--使用 IEEE 無負號數學運算函式(?)
+				use ieee.std_logic_unsigned.all;
 
-entity module_name is
-  port (
-		: in std_logic;
-		: out std_logic
-	);
-end module_name;
+	--entity 定義
+		entity module_name is
+			port (
+				: in std_logic;
+				: out std_logic
+			);
+		end module_name;
 
-architecture architecture_name of module_name is
-	--signal : std_logic;
-end architecture;
+	--實作定義
+		architecture implementation_name of module_name is
+			--實作使用的訊號定義
+				--signal 
+		begin
+			--內部線路定義
+		
+		end implementation_name;
